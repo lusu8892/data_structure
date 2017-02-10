@@ -26,9 +26,9 @@
 public class Puppy {
     int puppyAge;
 
-    public Pubby(String name) {
+    Puppy() {
         // This constructor has one parameter, name.
-        System.out.println("Name chosen is :" + name);
+        System.out.println("Name chosen is :");
     }
 
     public void setAge(int age) {
@@ -41,16 +41,29 @@ public class Puppy {
     }
 
     public static void main(String []args) {
-        /* Object creation */
-        Puppy myPuppy = new Pubby ( "Tommy");
+//        /* Object creation */
+//        Puppy myPuppy = new Puppy();
+//
+//        /* Call class method to set puppy's age */
+//        myPuppy.setAge(2);
+//
+//        /* Call Another class method to get puppy's age */
+//        myPuppy.getAge();
+//
+//        /* You can access instance variable as follows as well */
+//        System.out.println("Variable Value :" + myPuppy.puppyAge);
 
-        /* Call class method to set puppy's age */
-        myPuppy.setAge(2);
+//        Puppy myPuppy = new Puppy();
+//        Puppy myPuppy = new Puppy();
+        Puppy myPuppy = new Puppy();
+//        for (int i=0; i<3; i++) {
+//            Puppy myPuppy = new Puppy();
+//            System.out.println("wait");
+//        }
+        Puppy myPuppy2;
+        myPuppy2 = myPuppy;
 
-        /* Call Another class method to get puppy's age */
-        myPuppy.getAge();
+        System.out.println("wait");
 
-        /* You can access instance variable as follows as well */
-        System.out.println("Variable Value :" + myPuppy.puppyAge);
     }
 }
