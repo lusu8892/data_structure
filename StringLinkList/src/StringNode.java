@@ -5,6 +5,19 @@ public class StringNode {
     public char data;
     public StringNode next;  // the reference or the so-called link to refer to next StringNode object
 
+
+    /**
+     * Constructor
+     */
+    StringNode() {
+//        data = null;
+        next = null;
+    }
+
+    /**
+     * Constructor
+     * @param myCh input char data
+     */
     StringNode(char myCh) {
         data = myCh;
         next = null;  // refers to nothing until being set to object
@@ -20,9 +33,9 @@ public class StringNode {
 
     /**
      * Function so set data/value to the current node object
-     * @param char inputChar
+     * @param inputChar
      */
-    public void setValue (char inputChar) {
+    public void setData (char inputChar) {
         data = inputChar;
     }
 
@@ -30,7 +43,7 @@ public class StringNode {
      * Function to get the next node reference (the address NOT the actual Object)
      * @return the next StringNode
      */
-    public StringNode next () {
+    public StringNode getNext () {
         return next;
     }
 
@@ -38,7 +51,7 @@ public class StringNode {
      * Function to get the current node data
      * @return the current node data
      */
-    public char ch () {
+    public char getData () {
         return data;
     }
 }
