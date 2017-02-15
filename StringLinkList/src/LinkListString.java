@@ -217,7 +217,7 @@ public class LinkListString {
         return copyFirst;
     }
 
-    public class Iterator {
+    private class Iterator {
         private StringNode nextNode;
         private Iterator () {
             nextNode = head;
@@ -231,10 +231,10 @@ public class LinkListString {
          * it returns the character stored in the current node
          * and it advances the iterator so that it is ready to access the next node
          */
-        public char next(){
+        public char next() throws Exception{
             if (nextNode == null) {
-//                throw new Exception("Falling off the list end");
-                System.out.println("Falling off the list end");
+                throw new Exception("Falling off the list end");
+//                System.out.println("Falling off the list end");
             }
             char ch = nextNode.getData();
             nextNode = nextNode.getNext();

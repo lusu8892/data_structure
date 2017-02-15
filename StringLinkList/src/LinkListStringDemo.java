@@ -4,7 +4,7 @@
 
 
 public class LinkListStringDemo {
-    public static int numOccurance (LinkListString list, char ch){
+    public static int numOccurance (LinkListString list, char ch) throws Exception{
 
         int num = 0;
         LinkListString.Iterator iter = list.iterator();  // create a iterator
@@ -38,8 +38,13 @@ public class LinkListStringDemo {
         list1.insertAtPosition(new StringNode('e'), 3);
 
         list1.addLast(new StringNode('f'));
-        int num = numOccurance(list1,'t');
 
+
+        try{
+            int num = numOccurance(list1,'t');
+        } catch (Exception ex){
+            System.out.println(ex.getMessage());
+        }
 
 //        list1.toUpperCaseAtPosition(2);
 
