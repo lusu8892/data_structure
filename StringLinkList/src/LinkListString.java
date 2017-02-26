@@ -217,7 +217,7 @@ public class LinkListString {
         return copyFirst;
     }
 
-    private class Iterator {
+    public class Iterator {
         private StringNode nextNode;
         private Iterator () {
             nextNode = head;

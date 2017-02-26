@@ -50,20 +50,22 @@ public class ArrayStack {
     public static void main (String [] args) {
         int num_item = 10;
 
-        ArrayStack arrayStack = new ArrayStack(num_item);
-        System.out.println(arrayStack.isEmpty());
-        System.out.println(arrayStack.isFull());
+        System.out.println((5%10));
 
-        for (int i = 0; i < 100; i++) {
-            arrayStack.push(i);
-        }
-
-        System.out.println(arrayStack.isFull());
-
-        for (int i = 0; i < num_item; i++) {
-            int k = arrayStack.pop();
-            System.out.println(k);
-        }
-        int d = 1; System.out.println(d++ + ++d);
+//        ArrayStack arrayStack = new ArrayStack(num_item);
+//        System.out.println(arrayStack.isEmpty());
+//        System.out.println(arrayStack.isFull());
+//
+//        for (int i = 0; i < 100; i++) {
+//            arrayStack.push(i);
+//        }
+//
+//        System.out.println(arrayStack.isFull());
+//
+//        for (int i = 0; i < num_item; i++) {
+//            int k = arrayStack.pop();
+//            System.out.println(k);
+//        }
+//        int d = 1; System.out.println(d++ + ++d);
     }
 }

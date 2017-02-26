@@ -1,7 +1,9 @@
+import java.util.NoSuchElementException;
+
 /**
  * Created by sulu on 2/14/17.
  */
-public class FBArrayList {
+public class FBArrayList implements FBList{
 
     private static final int DEFAULT_CAPACITY = 10;  // default CAPACITY.
 
@@ -18,7 +20,7 @@ public class FBArrayList {
     }
 
     /**
-     * Function
+     * Clear the ArrayList
      */
     public void clear () {
         doClear();
@@ -34,21 +36,21 @@ public class FBArrayList {
     }
 
     /**
-     * Function to return the size of the ArrayList
+     * Returns the size of the ArrayList
      */
     public int size () {
         return theSize;
     }
 
     /**
-     * Function to trim the CAPACITY of the ArrayList
+     * Trims the CAPACITY of the ArrayList
      */
     public void trimToSize () {
         ensureCapacity(size());
     }
 
     /**
-     * Function to lookup the i-th position element
+     * Lookups the i-th position element
      * @param idx i-th position
      * @return the element at i-th position
      */
@@ -60,31 +62,33 @@ public class FBArrayList {
     }
 
     /**
-     * Function to set the i-th element as input element
+     * Sets the i-th element as input element
      * @param idx i-th position
-     * @param person the element to which user want to set
+     * @param x the element to which user want to set
      */
-    public void set (int idx, Person person) {
+    public void set (int idx, Person x) {
         if (idx < 0 || idx >= size()) {
             throw new ArrayIndexOutOfBoundsException();
         }
-        personArray[idx] = person;
+        personArray[idx] = x;
     }
 
     /**
-     * Function to add new element at the end of ArrayList
+     * Adds new element at the end of ArrayList
+     * @param x the element to be added
+     * @return always return true
      */
-    public void add (Person person) {
-        insert(size(), person);
-        theSize++;
+    public boolean add (Person x) {
+        add (size(), x);
+        return true;
     }
 
     /**
-     * Function to insert new element at certain position
+     * Adds new element at certain position
      * @param idx the i-th position to insert the element in
-     * @param person the element to insert in
+     * @param x the element to insert in
      */
-    public void insert (int idx, Person person) {
+    public void add (int idx, Person x) {
         if (personArray.length == size()) {  // if FBArrayList size is as large as its capacity
             // then expanding the capacity by double current capacity
             ensureCapacity(2*size() + 1);  // +1 is used in case of theSize = 0
@@ -92,12 +96,12 @@ public class FBArrayList {
         for (int i = theSize; i > idx; i--) {  // shift element
             personArray[i] = personArray[i - 1];
         }
-        personArray[idx] = person;
+        personArray[idx] = x;
         theSize++;
     }
 
     /**
-     * Function to remove element at certain position
+     * Removes the element at certain position
      * @param idx the i-th element to be removed in ArrayList
      * @return the removed elements
      */
@@ -109,7 +113,7 @@ public class FBArrayList {
             Person personToRemove = personArray[idx];  // remember the element to be removed
 
             for (int i = idx; i < size(); i++) {  // shift elements to fill vacancy
-                personArray[idx] = personArray[idx + 1];
+                personArray[i] = personArray[i + 1];
             }
             theSize--;
             return personToRemove;
@@ -117,7 +121,7 @@ public class FBArrayList {
     }
 
     /**
-     * Function to ensure the Capacity of ArrayList is enough for other operation
+     * Ensures the Capacity of ArrayList is enough for other operation
      * @param newCapacity the new Capacity user wants to assign to
      */
     public void ensureCapacity (int newCapacity) {
@@ -131,6 +135,39 @@ public class FBArrayList {
             for (int i = 0; i < size(); i++) {  // copy element piece by piece
                 personArray[i] = old[i];
             }
+        }
+    }
+
+    public FBIterator iterator () {
+        return new ArrayListIterator();
+    }
+
+    private class ArrayListIterator implements FBIterator {
+
+        private int currentIdx;
+
+        private ArrayListIterator () {
+            currentIdx = 0;
+        }
+
+        public boolean hasNext() {
+            return currentIdx < size();
+        }
+
+        public Person next () {
+            if (! hasNext()) {
+                throw new java.util.NoSuchElementException();
+            }
+            return personArray[currentIdx++];
+        }
+
+        /**
+         * Removes the last element returned by next() call
+         * also means you cannot call remove() again until another after call to next()
+         * this explain why currentIdx is being subtracted by 1 before remove.
+         */
+        public void remove () {
+            FBArrayList.this.remove(--currentIdx);
         }
     }
 }

@@ -3,10 +3,50 @@
  */
 public class Person {
     private String personName;
-    private long phoneNumber;
+    private Long phoneNumber;
 
     private Person next;
 
+    /**
+     * Default Constructor
+     */
+    public Person () {
+        this.personName = null;
+        this.phoneNumber = null;
+        this.next = null;
+    }
+
+    /**
+     * Second Constructor
+     * @param personName
+     * @param phoneNumber
+     */
+    public Person(String personName, Long phoneNumber) {
+        this();  // call default Construtor
+        this.personName = personName;
+        this.phoneNumber = phoneNumber;
+//        this.next = null;
+    }
+
+    /**
+     * Third Constructor
+     * @param personName
+     * @param phoneNumber
+     * @param next
+     */
+    public Person(String personName, Long phoneNumber, Person next) {
+        this(personName, phoneNumber);  //
+        this.next = next;
+    }
+
+    /**
+     * Fourth Constructor
+     * @param person
+     * @param next
+     */
+    public Person (Person person, Person next) {
+        this(person.getPersonName(), person.getPhoneNumber(), next);
+    }
 
     public void setData(String personName, long phoneNumber) {
         this.personName = personName;
