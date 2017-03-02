@@ -1,6 +1,3 @@
-import java.util.ConcurrentModificationException;
-import java.util.NoSuchElementException;
-
 /**
  * Created by sulu on 2/14/17.
  */
@@ -172,6 +169,81 @@ public class FBLinkList {
         return nodeNeedRemove;
     }
 
+    public void reverseRecursion ( ) {
+        callReverseRecursion(head, null);
+    }
+
+    private void callReverseRecursion (Person currentNode, Person prevNode) {
+        if (currentNode == null) {
+            tail = head; // reverse head and tail link
+            head = prevNode;  // set new head
+            return;
+        }
+        else {
+            Person nextNode = currentNode.getNext();
+//            nextNode = nextNode.getNext();
+            currentNode.setNext(prevNode);
+//            prevNode = currentNode;
+            modCount++;
+
+            callReverseRecursion(nextNode, currentNode);
+        }
+    }
+
+    public void reverseIteration () {
+        if (isEmpty()) {
+            return;
+        }
+        else {
+
+            if (head == tail) {  // only one node so no need to reverse
+                return;
+            }
+            else {
+//                Person pointer = head;
+//                Person previous = null, current = null;
+//                while (pointer != null) {
+//                    current = pointer;
+//                    pointer = pointer.getNext();
+//
+//                    // reverse the link
+//                    current.setNext(previous);
+//                    previous = current;
+//                    head = current;
+//                    modCount++;
+//                }
+//                Person prevNode = null;
+//                Person currentNode = head;
+//                Person nextNode;
+//
+//                while (currentNode != null) {
+//                    nextNode = currentNode.getNext();  // nextNode advance to next one
+//                    currentNode.setNext(prevNode);  // reverse link
+//
+//                    prevNode = currentNode;
+//                    currentNode = nextNode;  // set nextNode as currentNode
+//                    modCount++;
+//                }
+//                tail = head; // reverse head and tail link
+//                head = prevNode;  // set new head
+                Person prevNode = null, currentNode = null;
+                Person nextNode = head;
+
+                while (nextNode != null) {
+                    currentNode = nextNode;  // set nextNode as currentNode
+                    nextNode = nextNode.getNext();  // nextNode advance to next one
+
+                    currentNode.setNext( prevNode ); // reverse link
+                    prevNode = currentNode;  // set prevNode == currentNode
+
+                    modCount++;
+                }
+                tail = head; // reverse head and tail link
+                head = prevNode;  // set new head
+            }
+        }
+    }
+
     /**
      * Gets the Node at position idx, which must range from 0 to size() - 1.
      * @param idx index to search at.
@@ -205,6 +277,10 @@ public class FBLinkList {
         }
     }
 
+    public FBIterator iterator () {
+        return new LinkListIterator();
+    }
+
     private class LinkListIterator implements FBIterator {
 
         private Person current;
@@ -221,7 +297,7 @@ public class FBLinkList {
         }
 
         public boolean hasNext () {
-            return current.getNext() != null;
+            return (current != null);
         }
 
         public Person next() {
@@ -251,5 +327,37 @@ public class FBLinkList {
             okToRemove = false;
         }
 
+    }
+
+    public static void print (FBLinkList inputLinkList) {
+        FBIterator iterator = inputLinkList.iterator();
+        while (iterator.hasNext()) {
+            Person person = iterator.next();
+            System.out.println (person.getPersonName() + " " + person.getPhoneNumber());
+        }
+    }
+
+    public static void main ( String [] args) {
+
+        FBLinkList fbLinkList = new FBLinkList();
+
+        String[] personName = {"Tom", "Jack", "Alex", "Andy", "Jason", "Will"};
+        Long[] phoneNumbers = {7892456789L, 48956241267L, 4653192724L, 9337789455L, 9223668009L, 7154028889L};
+
+//        String[] personName = {"Tom", "Jack"};
+//        Long [] phoneNumbers = {7892456789L, 48956241267L};
+
+//        String[] personName = {"Tom"};
+//        Long [] phoneNumbers = {7892456789L};
+
+        for (int i = 0; i < personName.length; i++) {
+            fbLinkList.add(new Person (personName[i], phoneNumbers[i], null));
+        }
+
+//        print(fbLinkList);
+
+//        fbLinkList.reverseIteration();
+        fbLinkList.reverseRecursion();
+        print(fbLinkList);
     }
 }
