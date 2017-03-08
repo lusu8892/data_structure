@@ -35,7 +35,17 @@ public class ByteCounter {
         this( (readFile(pathName) ));
     }
 
-    private byte[] readFile (String pathName) {
+    /**
+     * Declared as private static method is because, this method is used inside the ByteCounter Class constructor
+     * So this function need to be built by compiler before the ByteCounter Class constructed.
+     * If just declared as private function, there will be chicken egg issue
+     * Private access level only restrict the method access outside from ByteCounter Class
+     * It does NOT have any control over when this method will be built
+     * Only Static key word makes this method built before the ByteCounter Class built
+     * @param pathName
+     * @return
+     */
+    private static byte[] readFile (String pathName) {
 
         Path filePath = Paths.get(pathName);
 

@@ -6,8 +6,9 @@
  */
 public class SubTest extends Test {
 
-    public String var = getString("子类初始化非静态变量");
     private String subVar = getString("子类初始化私有变量");
+    public String var = getString("子类初始化非静态变量");
+
     static String superVar = getString("子类初始化静态变量");
 
     static {
