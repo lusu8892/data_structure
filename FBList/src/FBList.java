@@ -1,13 +1,16 @@
+import java.util.Collection;
+
 /**
  * Created by sulu on 2/16/17.
  */
-public interface FBList {
+public interface FBList<AnyType> extends Collection<AnyType>{
     void clear();
     int size();
-    void add(int idx, Person x);
-    void set (int idx, Person x);
-    Person get (int idx);
+    void add(int idx, AnyType x);
+    void set (int idx, AnyType x);
+    AnyType get (int idx);
 
-    Person remove (int idx);
-    FBIterator iterator ();
+    
+    AnyType remove (int idx);
+//    FBIterator iterator ();
 }
