@@ -244,29 +244,29 @@ public class ByteCounter {
      * @param order
      * @throws Exception
      */
-    public void setOrder(String order) throws Exception {
-        if ( order == "byte") {
-            return;
-        }
-        else if ( order == "countInc" ) {
-            return;
-        }
-        else if ( order == "countDec" ) {
-            return;
-        }
-        else {
-            throw new Exception("Error: The order sequence specified is wrong");
-        }
-    }
+//    public void setOrder(String order) throws Exception {
+//        if ( order == "byte") {
+//            return;
+//        }
+//        else if ( order == "countInc" ) {
+//            return;
+//        }
+//        else if ( order == "countDec" ) {
+//            return;
+//        }
+//        else {
+//            throw new Exception("Error: The order sequence specified is wrong");
+//        }
+//    }
 
-    /**
-     * The default setOrder method which is overloading method setOrder( String order ),
-     * by invoking the method with string "byte" as default argument value.
-     * @throws Exception
-     */
-    public void setOrder () throws Exception {
-        setOrder("byte");
-    }
+//    /**
+//     * The default setOrder method which is overloading method setOrder( String order ),
+//     * by invoking the method with string "byte" as default argument value.
+//     * @throws Exception
+//     */
+//    public void setOrder () throws Exception {
+//        setOrder("byte");
+//    }
 
 
     /**

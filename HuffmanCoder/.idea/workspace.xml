@@ -16,29 +16,45 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.61470115">
+    <splitter split-orientation="horizontal" split-proportion="0.78271407">
       <split-first>
         <leaf>
-          <file leaf-file-name="HuffmanNode.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanNode.java">
+          <file leaf-file-name="CharCounter.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-                  <folding />
+                <state relative-caret-position="258">
+                  <caret line="304" column="12" lean-forward="false" selection-start-line="304" selection-start-column="12" selection-end-line="304" selection-end-column="12" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#getCharPrimArray#0;class#CharCounter#0" expanded="false" />
+                    <element signature="e#584#585#0" expanded="true" />
+                    <element signature="e#620#621#0" expanded="true" />
+                    <element signature="e#741#742#0" expanded="true" />
+                    <element signature="e#774#775#0" expanded="true" />
+                    <element signature="e#901#902#0" expanded="true" />
+                    <element signature="e#943#944#0" expanded="true" />
+                    <element signature="docComment;method#CharCounter#0;class#CharCounter#0" expanded="false" />
+                    <element signature="docComment;method#CharCounter#1;class#CharCounter#0" expanded="false" />
+                    <element signature="e#1567#1568#0" expanded="true" />
+                    <element signature="e#1616#1617#0" expanded="true" />
+                    <element signature="docComment;method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
+                    <element signature="docComment;method#getCount#0;class#CharCounter#0" expanded="false" />
+                    <element signature="docComment;method#getCount#2;class#CharCounter#0" expanded="false" />
+                    <element signature="docComment;method#numOccur#0;class#CharCounter#0" expanded="false" />
+                    <element signature="docComment;method#getElements#0;class#CharCounter#0" expanded="false" />
+                    <element signature="e#12783#12784#0" expanded="true" />
+                    <element signature="e#12824#12825#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CharCounter.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java">
+          <file leaf-file-name="Pride and Prejudice.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-250">
-                  <caret line="168" column="15" lean-forward="true" selection-start-line="168" selection-start-column="15" selection-end-line="168" selection-end-column="15" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#4453#4462#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="152">
+                  <caret line="48" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="45" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -50,8 +66,8 @@
           <file leaf-file-name="CharCounterTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/CharCounterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+                <state relative-caret-position="212">
+                  <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -70,6 +86,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>“</find>
+      <find>toArray</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -80,8 +102,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/BufferedInputStreamDemo.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/ByteCounter.java" />
         <option value="$PROJECT_DIR$/src/test/java/CharCounterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java" />
       </list>
     </option>
   </component>
@@ -242,49 +266,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CharCounterTest.testGetCount">
-    <configuration default="false" name="CharCounterTest.getCharObjArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="huffmancoder" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
-      <option name="METHOD_NAME" value="getCharObjArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CharCounterTest.getCharPrimArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="huffmancoder" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
-      <option name="METHOD_NAME" value="getCharPrimArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.CharCounterTest.testToString">
     <configuration default="false" name="CharCounterTest.getCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="huffmancoder" />
@@ -306,14 +288,77 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CharCounterTest.testGetCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CharCounterTest.getElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="huffmancoder" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
-      <option name="METHOD_NAME" value="testGetCount" />
+      <option name="METHOD_NAME" value="getElements" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CharCounterTest.testCharCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="huffmancoder" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
+      <option name="METHOD_NAME" value="testCharCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CharCounterTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="huffmancoder" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CharCounterTest.testSetOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="huffmancoder" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
+      <option name="METHOD_NAME" value="testSetOrder" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -700,18 +745,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCharObjArray" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCharPrimArray" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCount" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testGetCount" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCount" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getElements" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testCharCount" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testToString" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testSetOrder" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testGetCount" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCount" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCharObjArray" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCharPrimArray" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testToString" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testSetOrder" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCount" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getElements" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testCharCount" />
       </list>
     </recent_temporary>
   </component>
@@ -725,48 +772,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489182234170</updated>
-      <workItem from="1489182238195" duration="7360000" />
+      <workItem from="1489182238195" duration="39101000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CharCounterTest_getCount - 2017.03.12 at 23h 17m 45s.xml">
-      <configuration name="CharCounterTest.getCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testSetOrder - 2017.03.15 at 14h 23m 35s.xml">
+      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_getCount - 2017.03.12 at 23h 20m 04s.xml">
-      <configuration name="CharCounterTest.getCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testSetOrder - 2017.03.15 at 14h 24m 31s.xml">
+      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_getCount - 2017.03.12 at 23h 20m 20s.xml">
-      <configuration name="CharCounterTest.getCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testSetOrder - 2017.03.15 at 14h 24m 59s.xml">
+      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_getCount - 2017.03.12 at 23h 20m 24s.xml">
-      <configuration name="CharCounterTest.getCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testSetOrder - 2017.03.15 at 14h 25m 47s.xml">
+      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_getCount - 2017.03.12 at 23h 23m 35s.xml">
-      <configuration name="CharCounterTest.getCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testSetOrder - 2017.03.15 at 22h 00m 47s.xml">
+      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_getCount - 2017.03.12 at 23h 54m 49s.xml">
-      <configuration name="CharCounterTest.getCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testToString - 2017.03.15 at 23h 15m 45s.xml">
+      <configuration name="CharCounterTest.testToString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_getCount - 2017.03.13 at 00h 30m 44s.xml">
-      <configuration name="CharCounterTest.getCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testToString - 2017.03.15 at 23h 17m 48s.xml">
+      <configuration name="CharCounterTest.testToString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testGetCount - 2017.03.13 at 00h 31m 15s.xml">
-      <configuration name="CharCounterTest.testGetCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testToString - 2017.03.15 at 23h 17m 58s.xml">
+      <configuration name="CharCounterTest.testToString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testGetCount - 2017.03.13 at 00h 31m 27s.xml">
-      <configuration name="CharCounterTest.testGetCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testToString - 2017.03.15 at 23h 19m 19s.xml">
+      <configuration name="CharCounterTest.testToString" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testGetCount - 2017.03.13 at 00h 31m 37s.xml">
-      <configuration name="CharCounterTest.testGetCount" configurationId="JUnit" />
+    <history-entry file="CharCounterTest_testToString - 2017.03.15 at 23h 19m 39s.xml">
+      <configuration name="CharCounterTest.testToString" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7360000" />
+    <option name="totallyTimeSpent" value="39101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="731" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -780,9 +827,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09233177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0970266" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35367763" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -790,7 +837,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39499193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13302034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -799,6 +846,38 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07042254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43348983" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39499193" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -811,12 +890,60 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/CharCounterTest.java</url>
-          <line>52</line>
+          <line>25</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CharCounterTest.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CharCounterTest.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CharCounterTest.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CharCounterTest.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java</url>
+          <line>301</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java</url>
+          <line>376</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/CharCounterTest.java</url>
+          <line>76</line>
+          <properties class="CharCounterTest" method="setOrder" />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="56" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -851,37 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="887" column="0" lean-forward="false" selection-start-line="887" selection-start-column="0" selection-end-line="887" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="226" column="43" lean-forward="false" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
-          <folding>
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2181#2182#0" expanded="true" />
-            <element signature="e#5891#6026#0" expanded="true" />
-            <element signature="e#6025#6026#0" expanded="true" />
-            <element signature="e#6429#6593#0" expanded="true" />
-            <element signature="e#6592#6593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -890,26 +986,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/ByteCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2430">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/org/apache/commons/lang3/ArrayUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="1902" column="0" lean-forward="false" selection-start-line="1902" selection-start-column="0" selection-end-line="1902" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -927,9 +1007,17 @@
         <state relative-caret-position="133">
           <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
           <folding>
-            <element signature="e#2293#2294#0" expanded="true" />
-            <element signature="e#2327#2328#0" expanded="true" />
+            <element signature="e#2293#2294#0" expanded="false" />
+            <element signature="e#2327#2328#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -941,24 +1029,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="168" column="15" lean-forward="true" selection-start-line="168" selection-start-column="15" selection-end-line="168" selection-end-column="15" />
+        <state relative-caret-position="-5295">
+          <caret line="240" column="13" lean-forward="false" selection-start-line="240" selection-start-column="13" selection-end-line="240" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/ByteCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="261" column="5" lean-forward="false" selection-start-line="261" selection-start-column="5" selection-end-line="268" selection-end-column="7" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#4453#4462#0" expanded="true" />
+            <marker date="1489593831000" expanded="true" signature="8225:8434" ph="/**...*/" />
+            <marker date="1489593831000" expanded="true" signature="8482:8519" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CharCounterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="304" column="12" lean-forward="false" selection-start-line="304" selection-start-column="12" selection-end-line="304" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getCharPrimArray#0;class#CharCounter#0" expanded="false" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="docComment;method#CharCounter#0;class#CharCounter#0" expanded="false" />
+            <element signature="docComment;method#CharCounter#1;class#CharCounter#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="docComment;method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
+            <element signature="docComment;method#getCount#0;class#CharCounter#0" expanded="false" />
+            <element signature="docComment;method#getCount#2;class#CharCounter#0" expanded="false" />
+            <element signature="docComment;method#numOccur#0;class#CharCounter#0" expanded="false" />
+            <element signature="docComment;method#getElements#0;class#CharCounter#0" expanded="false" />
+            <element signature="e#12783#12784#0" expanded="true" />
+            <element signature="e#12824#12825#0" expanded="true" />
           </folding>
         </state>
       </provider>

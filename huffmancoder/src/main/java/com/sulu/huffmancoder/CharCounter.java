@@ -1,19 +1,18 @@
 /**
  * Created by sulu on 3/9/17.
- * Clss ByteCounter computes the count of each byte in from a char array or file and stores
+ * Class CharCounter computes the count of each char in from a char array or file and stores
  * the result in a data structure.
  */
 
 package com.sulu.huffmancoder;
 
-import org.apache.commons.lang3.*;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.*;
 
 public class CharCounter {
+
 
     public char [] getCharPrimArray () { return charPrimArray;}
 
@@ -25,6 +24,24 @@ public class CharCounter {
 
     private Character[] charObjArray;
 
+    private LinkedList<Character> getCountedLLChar() {
+        return countedLLChar;
+    }
+
+    private LinkedList<Character> countedLLChar = new LinkedList<>();
+
+    public LinkedList<Integer> getCountLLInt() {
+        return countLLInt;
+    }
+
+    private LinkedList<Integer> countLLInt = new LinkedList<>();
+
+    public LinkedList<CharCount> getCountedCharAndCount() {
+        return countedCharAndCount;
+    }
+
+    private LinkedList<CharCount> countedCharAndCount = new LinkedList<>();
+
     /**
      * A constructor with a Character array argument indicates that the counts are to be computed from that array.
      * @param inputCharObjArray
@@ -32,7 +49,7 @@ public class CharCounter {
     public CharCounter (Character [] inputCharObjArray) {
 
         this.charObjArray = inputCharObjArray;
-        this.charPrimArray = objToPrim( inputCharObjArray );
+        this.charPrimArray = ArrayUtils.toPrimitive( inputCharObjArray );
     }
 
     /**
@@ -49,36 +66,39 @@ public class CharCounter {
      * @return
      */
     private static Character[] readFileAsChar (String pathName) {
-        LinkedList<Character> LLChar = new LinkedList<>();
+        Character [] charObjArray = null;
+
         try {
             File fileDir = new File(pathName);
 
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(
                             new FileInputStream(fileDir), "UTF8"));
+            LinkedList<Character> LLChar = new LinkedList<>();
             int num = 0;
             while ( (num = in.read()) != -1 ) {
                 LLChar.addLast((char)num);
             }
 
             in.close();
-            return LLChar.toArray(new Character[LLChar.size()]);
+            charObjArray = LLChar.toArray(new Character[LLChar.size()]);
         }
         catch (UnsupportedEncodingException e)
         {
             System.out.println(e.getMessage());
-            return null;
+//            return charObjArray;
         }
         catch (IOException e)
         {
             System.out.println(e.getMessage());
-            return null;
+//            return charObjArray;
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
-            return null;
+//            return charObjArray;
         }
+        return charObjArray;
 //
 //        BufferedReader br = null;
 //
@@ -115,22 +135,6 @@ public class CharCounter {
     }
 
     /**
-     * A private static method to convert Character [] to char []
-     * * @param charObjArray
-     * @return
-     */
-    private static char[] objToPrim (Character [] charObjArray) {
-        char[] charPrimArray = new char[charObjArray.length];
-
-        int i = 0;
-        for (Character charObj : charObjArray) {
-            charPrimArray[i++] = charObj;
-        }
-
-        return charPrimArray;
-    }
-
-    /**
      * returns an integer array that contains the number of occurrences of the corresponding
      * char in the array char. The order of the array is specified by the current order defined below.
      * @param charArray
@@ -144,18 +148,27 @@ public class CharCounter {
         return ArrayUtils.toPrimitive(countObjArray);
     }
 
+    /**
+     * Private helper method
+     * @param charObjArray
+     * @return
+     */
     private Integer [] getCount ( Character [] charObjArray ) {
         Arrays.sort(charObjArray);
 
-        LinkedList<Character> LLChar = new LinkedList(Arrays.asList(charObjArray)); // construct a LLByte by sorted Array
-        Iterator iterator = LLChar.iterator();
+        LinkedList<Character> LLChar = new LinkedList(Arrays.asList(charObjArray)); // construct a LLChar by sorted Array
 
         // create a linkedlist to store number of occurrences of the corresponding byte
-        LinkedList<Integer> LLCount = new LinkedList<Integer>();
+        LinkedList<Integer> LLCount = new LinkedList<>();
+
+        int count = 0;
 
         while ( !LLChar.isEmpty() ) {
-            Character chObj = (Character) LLChar.getFirst();
-            LLCount.addLast(numOccur(LLChar, chObj));
+            Character chObj = LLChar.getFirst();
+            count = numOccur(LLChar, chObj);
+            if ( count != 0 ) {
+                LLCount.addLast( count );
+            }
         }
 
         return LLCount.toArray(new Integer[0]);
@@ -167,8 +180,10 @@ public class CharCounter {
      * @return
      */
     public int getCount ( char ch ) {
+        Arrays.sort(charObjArray);
         LinkedList<Character> LLChar = new LinkedList(Arrays.asList(charObjArray));
-        return numOccur( LLChar, ch);
+
+        return numOccur( LLChar, ch );
     }
 
 
@@ -182,57 +197,84 @@ public class CharCounter {
 
         int count = 0;
 
-        if ( LLChar.contains(ch) ) {
-            Iterator iterator = LLChar.iterator();
-//            int count = 0;
-            while (iterator.hasNext()) {
-                if (ch == iterator.next()) {
+        if ( LLChar.contains(ch) && !countedLLChar.contains(ch) ) {
+//            Iterator iterator = LLChar.iterator();
+//            while (iterator.hasNext()) {
+//                if (ch == iterator.next()) {
+//                    count++;
+//                    iterator.remove();  // once found one remove it from linkedlist
+//                }
+//            }
+
+            int startIndex = LLChar.indexOf( ch );
+
+            ListIterator listIterator = LLChar.listIterator( startIndex );
+            while ( listIterator.hasNext() ) {
+                if (ch == listIterator.next()) {
                     count++;
-                    iterator.remove();  // once found one remove it from linkedlist
+                    listIterator.remove();  // once found one remove it from linkedlist
+                }
+                else {
+                    break;  // jump out from loop
                 }
             }
-            return count;
-        } else {
-            return count;  //  if no such element in LLChar then count is 0.
+
+            countedLLChar.addLast( ch );  // append ch to countedLLChar linkedlist
+            countLLInt.addLast( count );  // append count to countLL linkedlist
+
+            // append ch and its corresponding count to countedCharAndCount linkedlist
+            countedCharAndCount.addLast( new CharCount( ch, count) );
+        } else if ( !LLChar.contains(ch) ) {
+            System.out.println ("The input source does NOT contain " + ch);
+        } else if ( countedLLChar.contains(ch) ) {
+            count = getCountFromCharAndCountLL( ch );
+            System.out.println ("The char: " + ch +
+                    " has been counted and the count is " + count);
         }
+        return count;  //  if no such element in LLChar then count is 0.
     }
 
-//    private Integer [] getCount (Character [] sortedCharObjArray) {
-//        LinkedList<Character> LLChar = new LinkedList(Arrays.asList(charObjArray)); // construct a LLByte by sorted Array
-//
-//    }
+    private Integer getCountFromCharAndCountLL (char chInQ) {
 
+        Integer count = null;
+        if ( countedCharAndCount.isEmpty() ) {
+            count = null;
+        } else {
+            Iterator<CharCount> iterator = countedCharAndCount.iterator();
+            while ( iterator.hasNext() ) {
+                CharCount oneChCount = iterator.next();
+                if ( oneChCount.ch == chInQ ) {
+                    count = oneChCount.count;
+                    break;
+                }
+            }
+        }
+        return count;
+    }
 
     /**
      * Returns a char array of the bytes that have been counted, i.e. those with non-zero counts.
      * @return
      */
     public char[] getElements() {
-        return null;
+        LinkedList<Character> LLChar = getCountedLLChar();
+
+        char [] countedCharPrimArray = ArrayUtils.toPrimitive( LLChar.toArray(new Character[0]) );
+
+        return countedCharPrimArray;
     }
+
 
     /**
      * Defines the order for the current object, which controls the ordering of the arrays returned by toString.
-     * If order equals byte (the default) the ordering is in terms of increasing byte value.
+     * If order equals char (the default) the ordering is in terms of increasing char value.
      * If order equals countInc or countDec the order is in terms of increasing or decreasing count, respectively.
-     * For counts that are equal, the order should be in increasing byte order.
-     * If order is not one of byte, countInc, or countDec throw an exception.
-     * @param order
+     * For counts that are equal, the order should be in increasing char order.
+     * If order is not one of char, countInc, or countDec throw an exception.
      * @throws Exception
      */
-    public void setOrder(String order) throws Exception {
-        if ( order == "byte") {
-            return;
-        }
-        else if ( order == "countInc" ) {
-            return;
-        }
-        else if ( order == "countDec" ) {
-            return;
-        }
-        else {
-            throw new Exception("Error: The order sequence specified is wrong");
-        }
+    public void setOrder() throws Exception {
+        setOrder("char");
     }
 
     /**
@@ -240,11 +282,69 @@ public class CharCounter {
      * by invoking the method with string "byte" as default argument value.
      * @throws Exception
      */
-    public void setOrder () throws Exception {
-        setOrder("byte");
+    public void setOrder (String order) throws Exception {
+
+//        AnyType [] array = linkedList.toArray((AnyType[]) new Object[0]);
+
+        ListIterator<CharCount> liCharCount = countedCharAndCount.listIterator();
+        ListIterator<Character> liCh = countedLLChar.listIterator();
+        ListIterator<Integer> liInt  = countLLInt.listIterator();
+
+        if ( order == "char" ) {
+            countedLLChar.clear();
+            countLLInt.clear();
+            CharCount charCount;
+            while ( liCharCount.hasNext() ) {
+                charCount = liCharCount.next();
+                countedLLChar.addLast( charCount.ch );
+                countLLInt.addLast( charCount.count );
+            }
+            return;
+        }
+        else if ( order == "countInc" ) {
+            
+            return;
+        }
+        else if ( order == "countDec" ) {
+
+            return;
+        }
+        else {
+            throw new Exception("Error: The order sequence specified is wrong");
+        }
     }
 
 
+    /**
+     *
+     * @param count
+     * @return
+     */
+    private char countMapToChar (int count) {
+        Character ch = null;
+        ListIterator<CharCount> listIterator = countedCharAndCount.listIterator();
+        while ( listIterator.hasNext() ) {
+            CharCount countInfo = listIterator.next();
+            if ( count == countInfo.count ) {
+                ch = countInfo.ch;
+                break;
+            }
+        }
+        return ch;
+    }
+
+    private int charMapToCount (char ch) {
+        Integer count = null;
+        ListIterator<CharCount> listIterator = countedCharAndCount.listIterator();
+        while ( listIterator.hasNext() ) {
+            CharCount countInfo = listIterator.next();
+            if ( ch == countInfo.ch ) {
+                count = countInfo.count;
+                break;
+            }
+        }
+        return count;
+    }
     /**
      * Returns a String containing the current bytes and counts in the current order.
      * It should have the format byte:count, separated by spaces, with no leading or trailing spaces.
@@ -258,31 +358,50 @@ public class CharCounter {
      * @return
      */
     public String toString () {
-        return null;
+
+        String charCountInfo = null;
+
+        if ( countedLLChar.size() == countLLInt.size() ) {
+            ListIterator<Character> liCh = countedLLChar.listIterator();
+            ListIterator<Integer> liInt = countLLInt.listIterator();
+
+            charCountInfo = new String();
+            String countInfo;
+            char ch;
+            int count;
+
+            while (liCh.hasNext() && liInt.hasNext()) {
+                ch = liCh.next();
+                count = liInt.next();
+                countInfo = new String(ch + ":" + count + "  ");
+                charCountInfo = charCountInfo.concat(countInfo);
+            }
+        }
+        return charCountInfo;
+//        ListIterator<CharCount> listIterator = countedCharAndCount.listIterator();
+//        String charCountInfo = new String();
+//        while ( listIterator.hasNext() ) {
+//            charCountInfo = charCountInfo.concat(listIterator.next().countInfo );
+//            charCountInfo = charCountInfo.concat("  ");
+//        }
+//        return charCountInfo;
     }
 
-    /**
-     * If format equals char, returns a String containing the counts formatted as above,
-     * but with the bytes as ASCII characters.
-     * For example (using the same ASCII values above): :3 ,:1 ?:1 H:1 a:1 e:2 h:1 l:2 o:3 r:1 u:1 w:1 y:1
-     *
-     * Note that 32 is the ASCII value for a space.
-     *
-     * @param format
-     * @return
-     */
+    private static class CharCount {
 
-    public String toString (String format) {
-        return null;
-    }
+        public CharCount (Character ch, Integer count) {
+            this.ch = ch;
+            this.count = count;
+            this.countInfo = new String (ch + ":" + count );
+        }
 
-    /**
-     * Returns an integer value that contains the number of occurrences of b
-     * @param b
-     * @return
-     */
-    private int getCount (byte b) {
-        int count = 0;
-        return count;
+        public CharCount () {
+            this (null, null);
+        }
+
+        public Character ch;
+        public Integer count;
+        public String countInfo;
+
     }
 }

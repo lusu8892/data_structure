@@ -11,9 +11,7 @@ public class Person {
      * Default Constructor
      */
     public Person () {
-        this.personName = null;
-        this.phoneNumber = null;
-        this.next = null;
+        this(null, null, null);
     }
 
     /**
@@ -22,9 +20,7 @@ public class Person {
      * @param phoneNumber
      */
     public Person(String personName, Long phoneNumber) {
-        this();  // call default Construtor
-        this.personName = personName;
-        this.phoneNumber = phoneNumber;
+        this( personName, phoneNumber, null);
 //        this.next = null;
     }
 
@@ -35,7 +31,8 @@ public class Person {
      * @param next
      */
     public Person(String personName, Long phoneNumber, Person next) {
-        this(personName, phoneNumber);  //
+        this.personName = personName;
+        this.phoneNumber = phoneNumber;
         this.next = next;
     }
 
