@@ -109,9 +109,22 @@ public class CharCounterTest {
 
         int [] countArray = counter.getCount( charArray );
 
-//        counter.setOrder( counter.getCountLLInt(), "char");
-//        char ch = counter.countMapToChar(4);
+        counter.setOrder( "countInc");
 
+        String countInfo = counter.toString();
+
+        System.out.println(countInfo);
+
+        counter.setOrder();
+
+        countInfo = counter.toString();
+
+        System.out.println( countInfo );
+
+
+        counter.setOrder("countDec");
+        countInfo = counter.toString();
+        System.out.println( countInfo );
         return;
     }
 }
