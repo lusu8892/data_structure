@@ -18,27 +18,27 @@ public class CharCounter {
 
     private char [] charPrimArray;
 
-    public Character[] getCharObjArray() {
-        return charObjArray;
-    }
+//    public Character[] getCharObjArray() {
+//        return charObjArray;
+//    }
 
-    private Character[] charObjArray;
+//    private Character[] charObjArray;
 
-    public LinkedList<Character> getCountedLLChar() {
-        return countedLLChar;
-    }
+//    public LinkedList<Character> getCountedLLChar() {
+//        return countedLLChar;
+//    }
 
-    private LinkedList<Character> countedLLChar = new LinkedList<>();
+//    private LinkedList<Character> countedLLChar = new LinkedList<>();
 
-    public LinkedList<Integer> getCountLLInt() {
-        return countLLInt;
-    }
+//    public LinkedList<Integer> getCountLLInt() {
+//        return countLLInt;
+//    }
 
-    private LinkedList<Integer> countLLInt = new LinkedList<>();
+//    private LinkedList<Integer> countLLInt = new LinkedList<>();
 
-    public LinkedList<CharCount> getCountedCharAndCount() {
-        return countedCharAndCount;
-    }
+//    public LinkedList<CharCount> getCountedCharAndCount() {
+//        return countedCharAndCount;
+//    }
 
     private LinkedList<CharCount> countedCharAndCount = new LinkedList<>();
 
@@ -47,9 +47,9 @@ public class CharCounter {
      * @param inputCharPrimArray
      */
     public CharCounter (char [] inputCharPrimArray) {
-
-        this.charObjArray = ArrayUtils.toObject(inputCharPrimArray);
         this.charPrimArray = inputCharPrimArray;
+//        this.charObjArray = ArrayUtils.toObject(inputCharPrimArray);
+
     }
 
     /**
@@ -57,9 +57,8 @@ public class CharCounter {
      * @param pathName
      */
     public CharCounter (String pathName) {
-        this.charObjArray = readFileAsChar( pathName );
-
-        this.charPrimArray = ArrayUtils.toPrimitive(charObjArray);
+        this.charPrimArray = ArrayUtils.toPrimitive( readFileAsChar( pathName ) );
+//        this.charObjArray = readFileAsChar( pathName );
     }
 
     /**
@@ -137,20 +136,13 @@ public class CharCounter {
     }
 
 
-    public int [] getCount () {
-        return getCount (charPrimArray);
-    }
+//    public int [] getCount () {
+//        return getCount (charPrimArray);
+//    }
 
-    /**
-     * returns an integer array that contains the number of occurrences of the corresponding
-     * char in the array char. The order of the array is specified by the current order defined below.
-     * @param charArray
-     * @return
-     */
-    public int [] getCount ( char [] charArray ) {
 
-//        Character [] charObjArray = ArrayUtils.toObject( charArray );
-        return getCountSub( charArray );
+    public void countChar ( ) {
+        countCharSub( charPrimArray );
     }
 
     /**
@@ -158,24 +150,43 @@ public class CharCounter {
      * @param charAr
      * @return
      */
-    private int [] getCountSub ( char [] charAr ) {
+    private void countCharSub ( char [] charAr ) {
         Character [] charObjAr = ArrayUtils.toObject( charAr );
         Arrays.sort(charObjAr);
 
         LinkedList<Character> LLChar = new LinkedList(Arrays.asList(charObjAr)); // construct a LLChar by sorted Array
 
         // create a linkedlist to store number of occurrences of the corresponding byte
-        LinkedList<Integer> LLCount = new LinkedList<>();
+//        LinkedList<Integer> LLCount = new LinkedList<>();
 
         while ( !LLChar.isEmpty() ) {
             Character chObj = LLChar.getFirst();
             int count = numOccur(LLChar, chObj);
             if ( count != 0 ) {
-                LLCount.addLast( count );
+                countedCharAndCount.addLast( new CharCount( chObj, count) );
+//                LLCount.addLast( count );
             }
         }
 
-        return ArrayUtils.toPrimitive(LLCount.toArray(new Integer[0]));
+//        return ArrayUtils.toPrimitive(LLCount.toArray(new Integer[0]));
+    }
+
+    /**
+     * returns an integer array that contains the number of occurrences of the corresponding
+     * char in the array char. The order of the array is specified by the current order defined below.
+     * @return
+     */
+    public int [] getCount ( ) {
+        LinkedList<Integer> countedLL = new LinkedList<>();
+
+        ListIterator<CharCount> listIt = countedCharAndCount.listIterator();
+        while ( listIt.hasNext() ) {
+            countedLL.addLast( listIt.next().count );
+        }
+
+        int [] countAr = ArrayUtils.toPrimitive( countedLL.toArray(new Integer[0]) );
+
+        return countAr;
     }
 
     /**
@@ -250,11 +261,11 @@ public class CharCounter {
                 }
             }
 
-            countedLLChar.addLast( ch );  // append ch to countedLLChar linkedlist
-            countLLInt.addLast( count );  // append count to countLL linkedlist
-
             // append ch and its corresponding count to countedCharAndCount linkedlist
-            countedCharAndCount.addLast( new CharCount( ch, count) );
+//            countedCharAndCount.addLast( new CharCount( ch, count) );
+//            countedLLChar.addLast( ch );  // append ch to countedLLChar linkedlist
+//            countLLInt.addLast( count );  // append count to countLL linkedlist
+
         } else {
             System.out.println ("The input source does NOT contain " + ch);
         }
@@ -286,6 +297,13 @@ public class CharCounter {
      */
     public char[] getElements() {
 //        LinkedList<Character> LLChar = getCountedLLChar();
+
+        LinkedList<Character> countedLLChar = new LinkedList<>();
+
+        ListIterator<CharCount> listIt = countedCharAndCount.listIterator();
+        while ( listIt.hasNext() ) {
+            countedLLChar.addLast( listIt.next().ch );
+        }
 
         char [] countedCharPrimArray = ArrayUtils.toPrimitive( countedLLChar.toArray(new Character[0]) );
 

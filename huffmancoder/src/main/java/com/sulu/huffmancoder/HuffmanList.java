@@ -14,11 +14,11 @@ public class HuffmanList {
         list = new LinkedList<>();
 
         CharCounter counter = new CharCounter(charArray);
-        counter.getCount (charArray);
+        counter.countChar ();
         counter.setOrder("countInc");
 
-        Character [] countCharAr = counter.getCountedLLChar().toArray(new Character[0]);
-        Integer [] countAr = counter.getCountLLInt().toArray(new Integer[0]);
+        char [] countCharAr = counter.getElements();
+        int [] countAr = counter.getCount();
 
         for (int i = 0; i < countCharAr.length; i++) {
             if ( countAr[i] > 0 ) {
@@ -28,12 +28,15 @@ public class HuffmanList {
     }
 
     public HuffmanList (String str) throws Exception{
-        CharCounter counter = new CharCounter(str);
-        counter.getCount ();
-        counter.setOrder();
 
-        Character [] countCharAr = counter.getCountedLLChar().toArray(new Character[0]);
-        Integer [] countAr = counter.getCountLLInt().toArray(new Integer[0]);
+        list = new LinkedList<>();
+
+        CharCounter counter = new CharCounter(str);
+        counter.countChar ();
+        counter.setOrder("countInc");
+
+        char [] countCharAr = counter.getElements();
+        int [] countAr = counter.getCount();
 
         for (int i = 0; i < countCharAr.length; i++) {
             if ( countAr[i] > 0 ) {
@@ -42,8 +45,26 @@ public class HuffmanList {
         }
     }
 
-    public HuffmanList (char [] charArray, int [] countArray) {
+    public HuffmanList (char [] charAr, int [] countAr) throws IllegalArgumentException{
+        boolean[] existed = new boolean[128];
+        int zero = 0;
+        list = new LinkedList<>();
 
+        for(int i = 0; i < existed.length; i++){
+            existed[i] = false;
+        }
+
+        for(int i = 0; i < countAr.length; i++){
+            if ( ( existed[ (int) charAr[i]] ) || ( ( countAr[i] < 0) ) )
+                throw new IllegalArgumentException();
+            else{
+                existed[ (int) charAr[i]] = true;
+                if (countAr[i]>0)
+                    list.add(new HuffmanNode(charAr[i], countAr[i]));
+                if (countAr[i] == 0)
+                    zero++;
+            }
+        }
     }
 
     public ListIterator<HuffmanNode> listIterator () {
