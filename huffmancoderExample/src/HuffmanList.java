@@ -1,5 +1,6 @@
 import java.util.*;
-public class HuffmanList{
+public class
+HuffmanList{
   
   private LinkedList<HuffmanNode> list;
   

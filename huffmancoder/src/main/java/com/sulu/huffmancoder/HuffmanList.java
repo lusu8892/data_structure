@@ -8,12 +8,16 @@ import java.util.ListIterator;
  */
 public class HuffmanList {
 
+    public LinkedList<HuffmanNode> getList() {
+        return list;
+    }
+
     private LinkedList<HuffmanNode> list;
 
-    public HuffmanList (char [] charArray) throws Exception {
+    public HuffmanList (char [] charAr) {
         list = new LinkedList<>();
 
-        CharCounter counter = new CharCounter(charArray);
+        CharCounter counter = new CharCounter(charAr);
         counter.countChar ();
         counter.setOrder("countInc");
 
@@ -27,7 +31,7 @@ public class HuffmanList {
         }
     }
 
-    public HuffmanList (String str) throws Exception{
+    public HuffmanList (String str) throws java.io.IOException{
 
         list = new LinkedList<>();
 
@@ -70,4 +74,6 @@ public class HuffmanList {
     public ListIterator<HuffmanNode> listIterator () {
         return list.listIterator();
     }
+
+
 }

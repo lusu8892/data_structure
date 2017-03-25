@@ -56,7 +56,7 @@ public class CharCounter {
      * A constructor with a String argument specifies the name of a file that the counts are to be computed from.
      * @param pathName
      */
-    public CharCounter (String pathName) {
+    public CharCounter (String pathName)  throws java.io.IOException {
         this.charPrimArray = ArrayUtils.toPrimitive( readFileAsChar( pathName ) );
 //        this.charObjArray = readFileAsChar( pathName );
     }
@@ -328,19 +328,15 @@ public class CharCounter {
      * by invoking the method with string "byte" as default argument value.
      * @throws Exception
      */
-    public void setOrder (String order) throws Exception {
+    public void setOrder (String order) throws IllegalArgumentException{
 
         if (order.equals("char")) {
             Collections.sort(countedCharAndCount, new countChar());
-//            sortDefault();
         } else if (order.equals("countInc")) {
-
             Collections.sort(countedCharAndCount, new countInc());
-//            sortCountInc();
             return;
         } else if (order.equals("countDec")) {
             Collections.sort(countedCharAndCount, new countDec());
-//            sortCountDec();
             return;
         } else {
             throw new IllegalArgumentException();

@@ -5,7 +5,7 @@ package com.sulu.huffmancoder;
  */
 public class HuffmanNode {
 
-        char ch;
+        Character ch;
         int count;
         public HuffmanNode left;
         public HuffmanNode right;
@@ -23,7 +23,7 @@ public class HuffmanNode {
          * @param left
          * @param right
          */
-        public HuffmanNode (char ch, int count, HuffmanNode left, HuffmanNode right) {
+        public HuffmanNode (Character ch, int count, HuffmanNode left, HuffmanNode right) {
             this.ch = ch;
             this.count = count;
             this.left = left;
@@ -35,8 +35,12 @@ public class HuffmanNode {
          * @param ch
          * @param count
          */
-        public HuffmanNode (char ch, int count) {
+        public HuffmanNode (Character ch, int count) {
             this (ch, count, null, null);
+        }
+
+        public boolean isLeaf () {
+            return ( (left == null) && (right == null));
         }
 
 

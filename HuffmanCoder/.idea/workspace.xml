@@ -13,87 +13,19 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/huffmancoder$CharCounterTest_testSetOrder.coverage" NAME="CharCounterTest.testSetOrder Coverage Results" MODIFIED="1489703268576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/huffmancoder$HuffmanCodeTest_buildHuffmanTree.coverage" NAME="HuffmanCodeTest.buildHuffmanTree Coverage Results" MODIFIED="1490382272002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CharCounterTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CharCounterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1845">
-              <caret line="123" column="7" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="123" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HuffmanNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharCounter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java">
+    <leaf>
+      <file leaf-file-name="HuffmanCodeTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanCodeTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#413#457#0" expanded="false" />
-                <element signature="e#413#457#0" expanded="false" />
-                <element signature="e#709#759#0" expanded="false" />
-                <element signature="docComment;method#CharCounter#1;class#CharCounter#0" expanded="false" />
-                <element signature="docComment;method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
-                <element signature="method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
-                <element signature="e#2914#2916#0" expanded="false" />
-                <element signature="e#3944#3945#0" expanded="true" />
-                <element signature="e#3989#3990#0" expanded="true" />
-                <element signature="docComment;method#getCount#1;class#CharCounter#0" expanded="false" />
-                <element signature="docComment;method#numOccur#0;class#CharCounter#0" expanded="false" />
-                <element signature="e#6354#6423#0" expanded="false" />
-                <element signature="e#8133#8207#0" expanded="false" />
-                <element signature="e#8632#8695#0" expanded="false" />
-                <element signature="docComment;method#getElements#0;class#CharCounter#0" expanded="false" />
-                <element signature="method#setOrder#0;class#CharCounter#0" expanded="false" />
-                <element signature="method#setOrder#1;class#CharCounter#0" expanded="false" />
-                <element signature="e#11250#11285#0" expanded="false" />
-                <element signature="docComment;method#toString#0;class#CharCounter#0" expanded="false" />
-                <element signature="method#toString#0;class#CharCounter#0" expanded="false" />
-                <element signature="e#14162#14200#0" expanded="false" />
-                <element signature="class#CharCount#0;class#CharCounter#0" expanded="false" />
-                <element signature="class#countChar#0;class#CharCounter#0" expanded="false" />
-                <element signature="e#15691#15692#0" expanded="true" />
-                <element signature="e#15744#15745#0" expanded="true" />
-                <element signature="class#countInc#0;class#CharCounter#0" expanded="false" />
-                <element signature="class#countDec#0;class#CharCounter#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HuffmanCoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HuffmanList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <caret line="9" column="115" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="115" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,23 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HuffmanListTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanListTest.java">
+      <file leaf-file-name="HuffmanCoderTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanCoderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pride and Prejudice.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="48" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="45" />
+            <state relative-caret-position="180">
+              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -157,12 +77,17 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/ByteCounter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java" />
         <option value="$PROJECT_DIR$/src/test/java/HuffmanListTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CharCounterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sulu/huffmancoder/HuffmanCoderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanNode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HuffmanCodeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HuffmanCoder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HuffmanCoderTest.java" />
       </list>
     </option>
   </component>
@@ -182,10 +107,10 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="731" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -198,7 +123,65 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huffmancoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huffmancoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huffmancoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huffmancoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huffmancoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huffmancoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huffmancoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -217,96 +200,13 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
+      <recent name="com.sulu.huffmancoder" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HuffmanListTest.testConstructor">
-    <configuration default="false" name="CharCounterTest.getCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="huffmancoder" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
-      <option name="METHOD_NAME" value="getCount" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CharCounterTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="huffmancoder" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
-      <option name="METHOD_NAME" value="testToString" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CharCounterTest.testSetOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="huffmancoder" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
-      <option name="METHOD_NAME" value="testSetOrder" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CharCounterTest.getCharPrimArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="huffmancoder" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CharCounterTest" />
-      <option name="METHOD_NAME" value="getCharPrimArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.HuffmanCoderTest.compress">
     <configuration default="false" name="HuffmanListTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="huffmancoder" />
@@ -315,6 +215,90 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HuffmanListTest" />
       <option name="METHOD_NAME" value="testConstructor" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="HuffmanCoderTest.buildHuffmanTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="huffmancoder" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HuffmanCoderTest" />
+      <option name="METHOD_NAME" value="buildHuffmanTree" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="HuffmanCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="huffmancoder" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HuffmanCodeTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="HuffmanCodeTest.buildHuffmanTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="huffmancoder" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HuffmanCodeTest" />
+      <option name="METHOD_NAME" value="buildHuffmanTree" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="HuffmanCoderTest.compress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="huffmancoder" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HuffmanCoderTest" />
+      <option name="METHOD_NAME" value="compress" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -709,19 +693,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCount" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testToString" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testSetOrder" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCharPrimArray" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.HuffmanListTest.testConstructor" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.HuffmanListTest.testConstructor" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HuffmanCoderTest.buildHuffmanTree" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HuffmanCodeTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HuffmanCodeTest.buildHuffmanTree" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.HuffmanCoderTest.compress" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.HuffmanListTest.testConstructor" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testSetOrder" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCharPrimArray" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CharCounterTest.testToString" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CharCounterTest.getCount" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HuffmanCoderTest.compress" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.HuffmanCodeTest.buildHuffmanTree" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HuffmanCodeTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HuffmanCoderTest.buildHuffmanTree" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HuffmanListTest.testConstructor" />
       </list>
     </recent_temporary>
   </component>
@@ -736,60 +720,62 @@
       <option name="presentableId" value="Default" />
       <updated>1489182234170</updated>
       <workItem from="1489182238195" duration="62299000" />
-      <workItem from="1489779636604" duration="15051000" />
+      <workItem from="1489779636604" duration="15100000" />
+      <workItem from="1490215585023" duration="32927000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CharCounterTest_getCharPrimArray - 2017.03.19 at 23h 44m 02s.xml">
-      <configuration name="CharCounterTest.getCharPrimArray" configurationId="JUnit" />
+    <history-entry file="HuffmanCodeTest_buildHuffmanTree - 2017.03.24 at 15h 57m 51s.xml">
+      <configuration name="HuffmanCodeTest.buildHuffmanTree" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testSetOrder - 2017.03.16 at 23h 14m 37s.xml">
-      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
+    <history-entry file="HuffmanCodeTest_buildHuffmanTree - 2017.03.24 at 23h 17m 11s.xml">
+      <configuration name="HuffmanCodeTest.buildHuffmanTree" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testSetOrder - 2017.03.16 at 23h 16m 44s.xml">
-      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
+    <history-entry file="HuffmanCoderTest_compress - 2017.03.24 at 23h 18m 31s.xml">
+      <configuration name="HuffmanCoderTest.compress" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testSetOrder - 2017.03.16 at 23h 16m 57s.xml">
-      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
+    <history-entry file="HuffmanCoderTest_compress - 2017.03.24 at 23h 27m 58s.xml">
+      <configuration name="HuffmanCoderTest.compress" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testSetOrder - 2017.03.16 at 23h 17m 23s.xml">
-      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
+    <history-entry file="HuffmanCoderTest_compress - 2017.03.24 at 23h 28m 36s.xml">
+      <configuration name="HuffmanCoderTest.compress" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testSetOrder - 2017.03.16 at 23h 19m 55s.xml">
-      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
+    <history-entry file="HuffmanCoderTest_compress - 2017.03.24 at 23h 29m 42s.xml">
+      <configuration name="HuffmanCoderTest.compress" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testSetOrder - 2017.03.20 at 00h 22m 51s.xml">
-      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
+    <history-entry file="HuffmanCoderTest_compress - 2017.03.24 at 23h 29m 57s.xml">
+      <configuration name="HuffmanCoderTest.compress" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CharCounterTest_testSetOrder - 2017.03.20 at 00h 22m 57s.xml">
-      <configuration name="CharCounterTest.testSetOrder" configurationId="JUnit" />
+    <history-entry file="HuffmanCoderTest_compress - 2017.03.24 at 23h 30m 17s.xml">
+      <configuration name="HuffmanCoderTest.compress" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HuffmanListTest_testConstructor - 2017.03.21 at 00h 05m 20s.xml">
-      <configuration name="HuffmanListTest.testConstructor" configurationId="JUnit" />
+    <history-entry file="HuffmanCoderTest_compress - 2017.03.24 at 23h 36m 36s.xml">
+      <configuration name="HuffmanCoderTest.compress" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HuffmanListTest_testConstructor - 2017.03.21 at 00h 08m 18s.xml">
-      <configuration name="HuffmanListTest.testConstructor" configurationId="JUnit" />
+    <history-entry file="HuffmanCoderTest_compress - 2017.03.24 at 23h 39m 53s.xml">
+      <configuration name="HuffmanCoderTest.compress" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77350000" />
+    <option name="totallyTimeSpent" value="110326000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="731" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="730" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23474178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23354232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20813772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20689656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -800,15 +786,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36619717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44514108" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07042254" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13302034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -891,7 +876,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java</url>
-          <line>349</line>
+          <line>345</line>
           <properties />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
@@ -914,22 +899,34 @@
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java</url>
-          <line>263</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanList.java</url>
-          <line>66</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanList.java</url>
-          <line>67</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/HuffmanCodeTest.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/HuffmanCoderTest.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/HuffmanCoder.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/CharCounterTest.java</url>
@@ -937,14 +934,8 @@
           <properties class="CharCounterTest" />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java</url>
-          <line>330</line>
-          <properties class="com.sulu.huffmancoder.CharCounter" method="setOrder" />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="81" />
+      <option name="time" value="103" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -953,6 +944,96 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CharCounterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="123" column="7" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="123" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#413#457#0" expanded="false" />
+            <element signature="docComment;method#CharCounter#1;class#CharCounter#0" expanded="false" />
+            <element signature="docComment;method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
+            <element signature="e#2942#2944#0" expanded="false" />
+            <element signature="docComment;method#getCount#1;class#CharCounter#0" expanded="false" />
+            <element signature="docComment;method#numOccur#0;class#CharCounter#0" expanded="false" />
+            <element signature="e#6382#6451#0" expanded="false" />
+            <element signature="e#8161#8235#0" expanded="false" />
+            <element signature="e#8660#8723#0" expanded="false" />
+            <element signature="docComment;method#getElements#0;class#CharCounter#0" expanded="false" />
+            <element signature="method#setOrder#0;class#CharCounter#0" expanded="false" />
+            <element signature="e#11202#11237#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#CharCounter#0" expanded="false" />
+            <element signature="e#14114#14152#0" expanded="false" />
+            <element signature="class#CharCount#0;class#CharCounter#0" expanded="false" />
+            <element signature="class#countChar#0;class#CharCounter#0" expanded="false" />
+            <element signature="class#countDec#0;class#CharCounter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#2826#2827#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3662#3663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -960,31 +1041,21 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#413#457#0" expanded="false" />
-            <element signature="e#413#457#0" expanded="false" />
-            <element signature="e#709#759#0" expanded="false" />
             <element signature="docComment;method#CharCounter#1;class#CharCounter#0" expanded="false" />
             <element signature="docComment;method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
-            <element signature="method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
-            <element signature="e#2914#2916#0" expanded="false" />
-            <element signature="e#3944#3945#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#2942#2944#0" expanded="false" />
             <element signature="docComment;method#getCount#1;class#CharCounter#0" expanded="false" />
             <element signature="docComment;method#numOccur#0;class#CharCounter#0" expanded="false" />
-            <element signature="e#6354#6423#0" expanded="false" />
-            <element signature="e#8133#8207#0" expanded="false" />
-            <element signature="e#8632#8695#0" expanded="false" />
+            <element signature="e#6382#6451#0" expanded="false" />
+            <element signature="e#8161#8235#0" expanded="false" />
+            <element signature="e#8660#8723#0" expanded="false" />
             <element signature="docComment;method#getElements#0;class#CharCounter#0" expanded="false" />
             <element signature="method#setOrder#0;class#CharCounter#0" expanded="false" />
-            <element signature="method#setOrder#1;class#CharCounter#0" expanded="false" />
-            <element signature="e#11250#11285#0" expanded="false" />
+            <element signature="e#11202#11237#0" expanded="false" />
             <element signature="docComment;method#toString#0;class#CharCounter#0" expanded="false" />
-            <element signature="method#toString#0;class#CharCounter#0" expanded="false" />
-            <element signature="e#14162#14200#0" expanded="false" />
+            <element signature="e#14114#14152#0" expanded="false" />
             <element signature="class#CharCount#0;class#CharCounter#0" expanded="false" />
             <element signature="class#countChar#0;class#CharCounter#0" expanded="false" />
-            <element signature="e#15691#15692#0" expanded="true" />
-            <element signature="e#15744#15745#0" expanded="true" />
-            <element signature="class#countInc#0;class#CharCounter#0" expanded="false" />
             <element signature="class#countDec#0;class#CharCounter#0" expanded="false" />
           </folding>
         </state>
@@ -994,15 +1065,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCoder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#2826#2827#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3662#3663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,6 +1092,8 @@
           <caret line="21" column="55" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1057,13 +1139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar!/org/apache/commons/lang3/ArrayUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1075,7 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="829" column="0" lean-forward="false" selection-start-line="829" selection-start-column="0" selection-end-line="829" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,17 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/ByteCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="261" column="5" lean-forward="false" selection-start-line="261" selection-start-column="5" selection-end-line="268" selection-end-column="7" />
-          <folding>
-            <marker date="1489593831000" expanded="true" signature="8225:8434" ph="/**...*/" />
-            <marker date="1489593831000" expanded="true" signature="8482:8519" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1120,80 +1183,189 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sulu/huffmancoder/HuffmanCoderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#982#1175#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/ByteCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <marker date="1489593831000" expanded="true" signature="8225:8434" ph="/**...*/" />
+            <marker date="1489593831000" expanded="true" signature="8482:8519" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CharCounterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="53" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="6" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanCodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="115" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="108">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="91">
+          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding>
-            <element signature="e#2137#2138#0" expanded="true" />
             <element signature="e#6429#6593#0" expanded="true" />
             <element signature="e#6592#6593#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanCoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="48" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="45" />
+        <state relative-caret-position="210">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCoder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#2826#2827#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3662#3663#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/CharCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="613">
+          <caret line="135" column="5" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="135" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#413#457#0" expanded="false" />
-            <element signature="e#413#457#0" expanded="false" />
-            <element signature="e#709#759#0" expanded="false" />
             <element signature="docComment;method#CharCounter#1;class#CharCounter#0" expanded="false" />
             <element signature="docComment;method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
-            <element signature="method#readFileAsChar#0;class#CharCounter#0" expanded="false" />
-            <element signature="e#2914#2916#0" expanded="false" />
-            <element signature="e#3944#3945#0" expanded="true" />
-            <element signature="e#3989#3990#0" expanded="true" />
+            <element signature="e#2942#2944#0" expanded="false" />
             <element signature="docComment;method#getCount#1;class#CharCounter#0" expanded="false" />
             <element signature="docComment;method#numOccur#0;class#CharCounter#0" expanded="false" />
-            <element signature="e#6354#6423#0" expanded="false" />
-            <element signature="e#8133#8207#0" expanded="false" />
-            <element signature="e#8632#8695#0" expanded="false" />
+            <element signature="e#6382#6451#0" expanded="false" />
+            <element signature="e#8161#8235#0" expanded="false" />
+            <element signature="e#8660#8723#0" expanded="false" />
             <element signature="docComment;method#getElements#0;class#CharCounter#0" expanded="false" />
             <element signature="method#setOrder#0;class#CharCounter#0" expanded="false" />
-            <element signature="method#setOrder#1;class#CharCounter#0" expanded="false" />
-            <element signature="e#11250#11285#0" expanded="false" />
+            <element signature="e#11202#11237#0" expanded="false" />
             <element signature="docComment;method#toString#0;class#CharCounter#0" expanded="false" />
-            <element signature="method#toString#0;class#CharCounter#0" expanded="false" />
-            <element signature="e#14162#14200#0" expanded="false" />
+            <element signature="e#14114#14152#0" expanded="false" />
             <element signature="class#CharCount#0;class#CharCounter#0" expanded="false" />
             <element signature="class#countChar#0;class#CharCounter#0" expanded="false" />
-            <element signature="e#15691#15692#0" expanded="true" />
-            <element signature="e#15744#15745#0" expanded="true" />
-            <element signature="class#countInc#0;class#CharCounter#0" expanded="false" />
             <element signature="class#countDec#0;class#CharCounter#0" expanded="false" />
           </folding>
         </state>
@@ -1201,37 +1373,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CharCounterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1845">
-          <caret line="123" column="7" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="123" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sulu/huffmancoder/HuffmanList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="536">
+          <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanListTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HuffmanCoderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
