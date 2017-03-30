@@ -26,7 +26,7 @@ public class BufferedReaderDemo {
         BufferedReader br = null;
         BufferedReader br2 = null;
 
-        String fileName = "/Users/sulu/IdeaProjects/HuffmanCoder/src/Pride and Prejudice.txt";
+        String fileName = "/Users/sulu/IdeaProjects/huffmancoder/src/main/java/com/sulu/huffmancoder/Pride and Prejudice.txt";
 
         try{
             br = new BufferedReader(new FileReader(fileName));
