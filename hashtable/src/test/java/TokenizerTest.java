@@ -17,6 +17,8 @@ public class TokenizerTest {
     @org.junit.Test
     public void getWordList() throws Exception {
         tker.getWordList();
+
+//        System.out.println( 1 % 9);
         return;
     }
 
