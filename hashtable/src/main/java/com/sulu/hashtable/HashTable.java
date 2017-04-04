@@ -37,11 +37,11 @@ public class HashTable {
      */
     public HashTable ( int tableSize ) {
         this.tableSize = nextPrime( tableSize ) ;
-        hashTable = new ArrayList< LinkedList<HashEntry> >( this.tableSize );
+        this.hashTable = new ArrayList<>( this.tableSize );
 
-        for ( LinkedList<HashEntry> list: hashTable ) {
+        for ( int i = 0; i < this.tableSize - 1; i++) {
             // for each HashTable cell creating an empty LinkedList (that is the chain) for it
-            list = new LinkedList<HashEntry>();
+            hashTable.add ( new LinkedList<HashEntry>() );
         }
     }
 
@@ -53,7 +53,8 @@ public class HashTable {
     public void insert ( String key, int value ) {
         if ( !contain( key ) ) {
             int index = hashFunction(key);
-            hashTable.get( index ).add( new HashEntry(key, value) );
+            LinkedList<HashEntry> whichList = hashTable.get(index);
+            whichList.add( new HashEntry(key, value) );
 
             currentSize++;
             if ( (currentSize / tableSize) > loadFactorThreshold ) {
@@ -115,10 +116,10 @@ public class HashTable {
      */
     public boolean contain ( String key ) {
         int index = hashFunction( key );
+        LinkedList<HashEntry> whichList = hashTable.get( index );
         boolean found = false;
-        if ( !hashTable.get( index ).isEmpty() ) {
-            LinkedList<HashEntry> whichList = hashTable.get( index );
-            ListIterator<HashEntry> listIterator = whichList.listIterator();
+        if ( !whichList.isEmpty() ) {
+            ListIterator<HashEntry> listIterator = whichList.listIterator( whichList.size() );
             while ( listIterator.hasPrevious() ) {
                 HashEntry item = listIterator.previous();
                 if ( key.equals( item.getKey() ) ) {
@@ -192,7 +193,7 @@ public class HashTable {
      */
     private static int nextPrime( int n )
     {
-        if( n % 2 == 0 )
+        if( (n % 2 == 0 ) && ( n % 31 == 0 ) )
             n++;
 
         for( ; !isPrime( n ); n += 2 )
