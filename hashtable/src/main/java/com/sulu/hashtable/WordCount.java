@@ -10,25 +10,48 @@ public class WordCount {
 
     private Tokenizer tk;
 
-    private HashTable hashTable;
+    private HashTable wordHashTable;
 
     private ArrayList<String> wordList;
 
     public WordCount ( String fileName ) throws IOException {
         this.tk = new Tokenizer( fileName );
         this.wordList = tk.getWordList();
-        this.hashTable = new HashTable();  // initialize by calling default constructor
+        executeWordHash();
     }
 
     public WordCount ( String [] input ) {
         this.tk = new Tokenizer( input );
         this.wordList = tk.getWordList();
-        this.hashTable = new HashTable();  // initialize by calling default constructor
+        executeWordHash();
     }
 
-    public void insertWordsToHashTable () {
+    public double getLoadFactor () {
+        return wordHashTable.getLoadFactor();
+    }
+
+    public String getWordStat () {
+        StringBuilder strBuilder = new StringBuilder();
+
+        for ( HashEntry item : wordHashTable.toArray() ) {
+            strBuilder.append( item.getKey() );
+            strBuilder.append( item.getValue() );
+            strBuilder.append(" ");
+        }
+        return strBuilder.toString();
+    }
+
+    private void executeWordHash () {
+
+//        if (this.wordList.size() < 5000){
+//            this.wordHashTable = new HashTable(wordList.size());
+//        }else{
+//            this.wordHashTable = new HashTable(10000);
+//        }
+        this.wordHashTable = new HashTable();
+
         for ( String str : this.wordList) {
-            hashTable.insert( str, 1 );
+            wordHashTable.insert( str, 1 );
         }
     }
 
@@ -39,8 +62,9 @@ public class WordCount {
 
         WordCount wc = new WordCount( fileName );
 
-        wc.insertWordsToHashTable();
+        System.out.println ( wc.getLoadFactor() );
 
+        System.out.println ( wc. getWordStat() );
         return;
 
     }

@@ -11,7 +11,7 @@ import static java.lang.Math.abs;
  */
 public class HashTable {
 
-    private static final int DEFAULT_TABLE_SIZE = 10007;
+    private static final int DEFAULT_TABLE_SIZE = 101;
     private ArrayList< LinkedList<HashEntry> > hashTable;
 
     private int tableSize;  // the capacity of hash table
@@ -19,7 +19,12 @@ public class HashTable {
     // current size of the hash table, reflecting how many separate chainings in the current table
     private int currentSize = 0;
 
-    private double loadFactorThreshold = 0.9;
+    public double getLoadFactor() {
+
+        return ( currentSize / tableSize) ;
+    }
+
+    private double loadFactorThreshold = 0.8;
 
     // to remember where is key located at
     private int inChainIndex = 0;
@@ -39,7 +44,7 @@ public class HashTable {
         this.tableSize = nextPrime( tableSize ) ;
         this.hashTable = new ArrayList<>( this.tableSize );
 
-        for ( int i = 0; i < this.tableSize - 1; i++) {
+        for ( int i = 0; i < this.tableSize; i++) {
             // for each HashTable cell creating an empty LinkedList (that is the chain) for it
             hashTable.add ( new LinkedList<HashEntry>() );
         }
@@ -139,12 +144,15 @@ public class HashTable {
         ArrayList< LinkedList<HashEntry> > oldHashTable = hashTable;
 
         // create new double size new empty hashTable
+
         // re-assign new tableSize as the first prime number which is 2 times bigger than old tableSize
         this.tableSize = nextPrime( 2 * this.tableSize );
         // create new hash table based on new tableSize
-        hashTable = new ArrayList< LinkedList<HashEntry> >( this.tableSize );
-        for ( LinkedList<HashEntry> list : hashTable ) {
-            list = new LinkedList<HashEntry>();
+        hashTable = new ArrayList<>( this.tableSize );
+
+        for ( int i = 0; i < this.tableSize; i++) {
+            // for each HashTable cell creating an empty LinkedList (that is the chain) for it
+            hashTable.add ( new LinkedList<HashEntry>() );
         }
 
         // copy old hash table content to new hash table
@@ -156,8 +164,19 @@ public class HashTable {
                 }
             }
         }
+    }
 
-
+    //Output all hashTable into an Array
+    public HashEntry[] toArray() {
+        ArrayList<HashEntry> hashAr = new ArrayList(currentSize);
+        for ( LinkedList<HashEntry> list : hashTable ) {
+            if ( !list.isEmpty() ) {
+                for (ListIterator<HashEntry> it = list.listIterator(); it.hasNext();) {
+                    hashAr.add(it.next());
+                }
+            }
+        }
+        return hashAr.toArray(new HashEntry[hashAr.size()]);
     }
 
     /**
@@ -193,7 +212,7 @@ public class HashTable {
      */
     private static int nextPrime( int n )
     {
-        if( (n % 2 == 0 ) && ( n % 31 == 0 ) )
+        if( (n % 2 == 0 ))
             n++;
 
         for( ; !isPrime( n ); n += 2 )
